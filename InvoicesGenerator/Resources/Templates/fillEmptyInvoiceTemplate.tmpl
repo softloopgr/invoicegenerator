@@ -1,0 +1,130 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+<table width="100%">
+	<tr>
+		<td>
+			<table width="100%">
+				<tr>
+					<td>
+						&nbsp;
+					</td>
+					<td style="text-align:right;" width="400">
+						<table width="100%">
+							<tr>
+								<td colspan="2" style="font-size:24px" align="right">&nbsp;</td>
+							</tr>
+							<tr>
+								<td colspan="2" align="right"><b>{invoice_isCreditVf}<b></td>
+							</tr>
+							<tr>
+								<td align="right" width="320">&nbsp;</td>
+								<td align="right">&nbsp;</td>
+							</tr>
+							<tr>
+								<td colspan="2" align="right">&nbsp;<b>{invoice_location}<b> <b>{invoice_date}<b></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table width="100%">
+				<tr>
+					<td colspan="2" style="font-size:16px">&nbsp;</td>
+				</tr>
+				<tr>
+					<td align="right" width="120">&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td align="right">&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td align="right">&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td align="right">&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td align="right">&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td align="right">&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="font-size:16px">&nbsp;</td>
+				</tr>
+				<tr>
+					<td align="right">&nbsp;</td>
+					<td><b>{customer_name}</b></td>
+				</tr>
+				<tr>
+					<td align="right">&nbsp;</td>
+					<td><b>{customer_description}</b></td>
+				</tr>
+				<tr>
+					<td align="right">&nbsp;</td>
+					<td><b>{customer_address}</b></td>
+				</tr>
+				<tr>
+					<td align="right">&nbsp;</td>
+					<td><b>{customer_taxnumber}</b></td>
+				</tr>
+				<tr>
+					<td align="right">&nbsp;</td>
+					<td><b>{customer_taxoffice}</b></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table width="100%" cellpadding="3">
+				<tr>
+					<td width="70%">
+						&nbsp;
+					</td>
+					<td width="10%">
+						&nbsp;
+					</td>
+					<td width="10%">
+						&nbsp;
+					</td>
+					<td width="10%">
+						&nbsp;
+					</td>
+				</tr>
+				{invoice_items}
+				<tr>
+					<tr>
+						<td style="text-align:left;">Σχόλια:</td>
+						<td colspan="2" style="text-align:right;">Σύνολο:</td>
+						<td style="text-align:right;"><b>{invoice_subtotal}</b></td>
+					</tr>
+					<tr>
+						<td rowspan="2">{invoice_userComments}</td>
+						<td colspan="2" style="text-align:right;">Φ.Π.Α. {invoice_tax}:</td>
+						<td style="text-align:right;"><b>{invoice_taxNumeric}</b></td>
+					</tr>
+					<tr>
+						<td colspan="2" style="text-align:right;">Ολικό:</td>
+						<td style="text-align:right;"><b>{invoice_total}</b></td>
+					</tr>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

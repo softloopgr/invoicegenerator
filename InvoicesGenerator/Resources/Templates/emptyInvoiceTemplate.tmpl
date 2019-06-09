@@ -1,0 +1,114 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+<table width="100%" style="page-break-after: always">
+	<tr>
+		<td>
+			<table width="100%">
+				<tr>
+					<td>
+						<img border="0" src="{image_src}" height="60" width="100" style="display:~imageVisible~;"/>&nbsp;
+					</td>
+					<td style="text-align:right;" width="400">
+						<table width="100%">
+							<tr>
+								<td colspan="2" style="font-size:24px" align="right">{invoice_invoiceTypeName}</td>
+							</tr>
+							<tr>
+								<td colspan="2" align="right">&nbsp;</td>
+							</tr>
+							<tr>
+								<td align="right" width="320">Αριθμός:</td>
+								<td style="border:solid 1px #999" align="right"><b>{invoice_currentPrintNumber}<b></td>
+							</tr>
+							<tr>
+								<td colspan="2" align="right">&nbsp;</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table width="100%">
+				<tr>
+					<td colspan="2" style="font-size:16px"><b>Στοιχεία Εταιρίας:</b></td>
+				</tr>
+				<tr>
+					<td align="right" width="120">Επωνυμία:</td>
+					<td><b>{seal_name}<b></td>
+				</tr>
+				<tr>
+					<td align="right">Επάγγελμα:</td>
+					<td><b>{seal_occupation}</b></td>
+				</tr>
+				<tr>
+					<td align="right">Διεύθυνση:</td>
+					<td><b>{seal_address}</b></td>
+				</tr>
+				<tr>
+					<td align="right">Τηλέφωνο:</td>
+					<td><b>{seal_phone}</b></td>
+				</tr>
+				<tr>
+					<td align="right">Α.Φ.Μ.:</td>
+					<td><b>{seal_taxnumber}</b></td>
+				</tr>
+				<tr>
+					<td align="right">Δ.Ο.Υ.:</td>
+					<td><b>{seal_taxoffice}</b></td>
+				</tr>
+				<tr>
+					<td colspan="2" style="font-size:16px"><b>Στοιχεία Πελάτη:</b></td>
+				</tr>
+				<tr>
+					<td align="right">Επωνυμία:</td>
+					<td><b></b></td>
+				</tr>
+				<tr>
+					<td align="right">Επάγγελμα:</td>
+					<td><b></b></td>
+				</tr>
+				<tr>
+					<td align="right">Διεύθυνση:</td>
+					<td><b></b></td>
+				</tr>
+				<tr>
+					<td align="right">Α.Φ.Μ.:</td>
+					<td><b></b></td>
+				</tr>
+				<tr>
+					<td align="right">Δ.Ο.Υ.:</td>
+					<td><b></b></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table width="100%" cellpadding="3">
+				<tr>
+					<td width="70%" style="text-align:left;font-size:bold;border:solid 1px #666">
+						Περιγραφή Είδους
+					</td>
+					<td width="10%" style="text-align:center;font-size:bold;border:solid 1px #666">
+						Ποσότητα
+					</td>
+					<td width="10%" style="text-align:center;font-size:bold;border:solid 1px #666">
+						Μονάδα
+					</td>
+					<td width="10%" style="text-align:center;font-size:bold;border:solid 1px #666">
+						Σύνολο
+					</td>
+				</tr>
+				{invoice_items}
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

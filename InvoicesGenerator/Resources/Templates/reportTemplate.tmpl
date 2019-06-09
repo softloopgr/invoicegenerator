@@ -1,0 +1,130 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+<table width="100%">
+	<tr>
+		<td>
+			<table width="100%">
+				<tr>
+					<td>
+						<img border="0" src="{image_src}" height="60" width="100" style="display:~imageVisible~;"/>&nbsp;
+					</td>
+					<td style="text-align:right;" width="400">
+						<table width="100%">
+							<tr>
+								<td colspan="2" style="font-size:24px" align="right">{invoice_invoiceTypeName}</td>
+							</tr>
+							<tr>
+								<td colspan="2" align="right"><b>{invoice_isCreditVf}&nbsp;<b></td>
+							</tr>
+							<tr>
+								<td align="right" width="320">Αριθμός:</td>
+								<td style="border:solid 1px #999" align="right"><b>{invoice_currentPrintNumber}<b></td>
+							</tr>
+							<tr>
+								<td colspan="2" align="right">&nbsp;<b>{invoice_location}<b> <b>{invoice_date}<b></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table width="100%">
+				<tr>
+					<td colspan="2" style="font-size:12px"><b>Στοιχεία Εταιρίας:</b></td>
+				</tr>
+				<tr>
+					<td align="right" style="font-size:12px" width="120">Επωνυμία:</td>
+					<td style="font-size:12px"><b>{seal_name}<b></td>
+				</tr>
+				<tr>
+					<td align="right" style="font-size:12px">Επάγγελμα:</td>
+					<td style="font-size:12px"><b>{seal_occupation}</b></td>
+				</tr>
+				<tr>
+					<td align="right" style="font-size:12px">Διεύθυνση:</td>
+					<td style="font-size:12px"><b>{seal_address}</b></td>
+				</tr>
+				<tr>
+					<td align="right" style="font-size:12px">Τηλέφωνο:</td>
+					<td style="font-size:12px"><b>{seal_phone}</b></td>
+				</tr>
+				<tr>
+					<td align="right" style="font-size:12px">Α.Φ.Μ.:</td>
+					<td style="font-size:12px"><b>{seal_taxnumber}</b></td>
+				</tr>
+				<tr>
+					<td align="right" style="font-size:12px">Δ.Ο.Υ.:</td>
+					<td style="font-size:12px"><b>{seal_taxoffice}</b></td>
+				</tr>
+				<tr>
+					<td colspan="2" style="font-size:12px"><b>Στοιχεία Πελάτη:</b></td>
+				</tr>
+				<tr>
+					<td align="right" style="font-size:12px">Επωνυμία:</td>
+					<td style="font-size:12px"><b>{customer_name}</b></td>
+				</tr>
+				<tr>
+					<td align="right" style="font-size:12px">Επάγγελμα:</td>
+					<td style="font-size:12px"><b>{customer_description}</b></td>
+				</tr>
+				<tr>
+					<td align="right" style="font-size:12px">Διεύθυνση:</td>
+					<td style="font-size:12px"><b>{customer_address}</b></td>
+				</tr>
+				<tr>
+					<td align="right" style="font-size:12px">Α.Φ.Μ.:</td>
+					<td style="font-size:12px"><b>{customer_taxnumber}</b></td>
+				</tr>
+				<tr>
+					<td align="right" style="font-size:12px">Δ.Ο.Υ.:</td>
+					<td style="font-size:12px"><b>{customer_taxoffice}</b></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table width="100%" cellpadding="3" style="font-size:12px">
+				<tr>
+					<td width="70%" style="text-align:left;font-size:bold;border:solid 1px #666;font-size:12px">
+						Περιγραφή Είδους
+					</td>
+					<td width="10%" style="text-align:center;font-size:bold;border:solid 1px #666;font-size:12px">
+						Ποσότητα
+					</td>
+					<td width="10%" style="text-align:center;font-size:bold;border:solid 1px #666;font-size:12px">
+						Μονάδα
+					</td>
+					<td width="10%" style="text-align:center;font-size:bold;border:solid 1px #666;font-size:12px">
+						Σύνολο
+					</td>
+				</tr>
+				{invoice_items}
+				<tr>
+					<tr>
+						<td style="text-align:left;font-size:12px">Σχόλια:</td>
+						<td colspan="2" style="text-align:right;font-size:12px">Σύνολο:</td>
+						<td style="text-align:right;font-size:12px"><b>{invoice_subtotal}</b></td>
+					</tr>
+					<tr>
+						<td rowspan="2" style="font-size:12px">{invoice_userComments}</td>
+						<td colspan="2" style="text-align:right;font-size:12px">Φ.Π.Α. {invoice_tax}:</td>
+						<td style="text-align:right;font-size:12px"><b>{invoice_taxNumeric}</b></td>
+					</tr>
+					<tr>
+						<td colspan="2" style="text-align:right;font-size:12px">Ολικό:</td>
+						<td style="text-align:right;font-size:12px"><b>{invoice_total}</b></td>
+					</tr>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
